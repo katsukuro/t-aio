@@ -53,7 +53,7 @@ function Search({ api }) {
           placeholder="The forgotten army, Flames..."
           value={term}
           onChange={setTerm}
-          required
+          disabled
         />
         <button disabled={loading || !site} className={`btn primary${loading ? " loading" : ""}`} type="submit">
           Search
